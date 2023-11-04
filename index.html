@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Wave</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #005f73;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover, .navbar a:focus {
+            background-color: #0a9396;
+            color: white;
+        }
+        .signup-button {
+            float: right;
+            background-color: #005f73;
+            padding: 14px 20px;
+        }
+        .signup-button:hover {
+            background-color: #d79b60;
+        }
+        
+        .hero-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: #94d2bd;
+        }
+        .hero-section h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            color: #fff;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .call-to-action {
+            font-size: 1.2em;
+            background-color: #ee9b00;
+            color: white;
+            padding: 10px 30px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .call-to-action:hover {
+            background-color: #ca6702;
+        }
+
+        /* Section styles */
+        .section {
+            background-color: white;
+            margin: 8px 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section-header {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .navbar a, .signup-button {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .hero-section h1 {
+                font-size: 2em;
+            }
+            .hero-section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="youtube_videos.html">YouTube Videos</a>
+        <a href="past_questions.html">PY Questions</a>
+        <a href="notes.html">Notes</a>
+        <a href="reference_books.html">Reference Books</a>
+        <a href="signin.html" class="signup-button">Sign In</a>
+        <a href="signup.html" class="signup-button">Sign Up</a>
+    </div>
+
+    <div class="hero-section">
+        <h1>Welcome to Brain Wave</h1>
+        <p>One-stop hub for all your first year engineering study materials, past papers, and tutorial videos.</p>
+        <a href="#resources" class="call-to-action">Explore Resources</a>
+    </div>
+
+    <div class="container">
+        <div class="section" id="resources">
+            <h2 class="section-header">Featured YouTube Videos</h2>
+            <a href="youtube_videos.html" class="call-to-action">Watch Videos</a>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Latest Past Year Questions</h2>
+            <p>Access the latest past year questions to test your knowledge and prepare for your exams.</p>
+            <a href="past_questions.html" class="call-to-action">View Questions</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Brain Wave. All rights reserved.</p>
+    </div>
+    
+</body>
+</html>
