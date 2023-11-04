@@ -21,6 +21,13 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 100px; 
+        }
         form {
             display: flex;
             flex-direction: column;
@@ -78,6 +85,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Brain Wave Logo">
+        </div>
         <h2>Sign In</h2>
         <form>
             <label for="username">Username:</label>

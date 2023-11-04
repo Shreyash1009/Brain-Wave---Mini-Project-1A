@@ -27,6 +27,13 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             text-align: center;
         }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 100px; 
+        }
         form {
             display: flex;
             flex-direction: column;
@@ -84,6 +91,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Brain Wave Logo">
+        </div>
         <h2>Welcome! Please Sign Up</h2>
         <form id="signupForm" onsubmit="return validatePasswords()">
             <label for="name">Name:</label>

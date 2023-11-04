@@ -12,19 +12,31 @@
             padding: 0;
             background-color: #f7f7f7;
         }
+        /* Navbar styles */
         .navbar {
+            display: flex;
+            align-items: center;
             background-color: #005f73;
+            padding: 10px;
             overflow: hidden;
         }
-        .navbar a {
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px; 
+        }
+        /* Adjust the margin of the navbar items to the left */
+        .navbar-links a {
             float: left;
             display: block;
             color: white;
-            text-align: center;
+            text-align: right;
             padding: 14px 16px;
             text-decoration: none;
         }
-        .navbar a:hover, .navbar a:focus {
+        .navbar-links a:hover, .navbar-links a:focus {
             background-color: #0a9396;
             color: white;
         }
@@ -68,12 +80,17 @@
 </head>
 <body>
     <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Brain Wave Logo">
+        </div>
+        <div class="navbar-links">
         <a href="home.html">Home</a>
         <a href="youtube_videos.html">YouTube Videos</a>
         <a href="past_questions.html">PY Questions</a>
         <a href="notes.html">Notes</a>
         <a href="reference_books.html">Reference Books</a>
-        <a href="signin.html">Sign In</a>
+        <a href="signin.html" class="signup-button">Sign In</a>
+        </div>
     </div>
 
     <div class="container">
